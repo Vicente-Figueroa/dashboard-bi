@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Web Sencilla</title>
+    <title>Dashboard BI</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -24,7 +24,14 @@
         }
 
         main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             padding: 20px;
+        }
+
+        .iframe-container {
+            text-align: center;
         }
 
         footer {
@@ -38,15 +45,19 @@
 
 <body>
     <header>
-        <h1>Mi Página Web</h1>
+        <h1>Dashboard BI</h1>
     </header>
 
-    <iframe title="Optimización de Sondaje - Costos Aditivos" width="1140" height="541.25"
-        src="https://app.powerbi.com/reportEmbed?reportId=950ce679-2ae0-4d08-8b7b-1ee0b6a7e0d6&autoAuth=true&ctid=d027c8a2-216a-47c0-b70b-0788758751c1"
-        frameborder="0" allowFullScreen="true"></iframe>
+    <main>
+        <div class="iframe-container">
+            <iframe title="Optimización de Sondaje - Costos Aditivos" width="1140" height="541.25"
+                src="https://app.powerbi.com/reportEmbed?reportId=950ce679-2ae0-4d08-8b7b-1ee0b6a7e0d6&autoAuth=true&ctid=d027c8a2-216a-47c0-b70b-0788758751c1"
+                frameborder="0" allowFullScreen="true"></iframe>
+        </div>
+    </main>
 
     <footer>
-        <p>&copy; 2023 Mi Página Web. Todos los derechos reservados.</p>
+        <p>&copy; 2023 Dashboard BI. Todos los derechos reservados.</p>
     </footer>
 </body>
 
